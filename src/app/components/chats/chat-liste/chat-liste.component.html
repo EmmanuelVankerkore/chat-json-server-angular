@@ -1,0 +1,6 @@
+<div class="chat-list">
+    <app-chat-card 
+        *ngFor="let chat of chats" 
+        [chat]="chat" 
+        (delete)="onDeleteChat(chat)"></app-chat-card>
+</div>

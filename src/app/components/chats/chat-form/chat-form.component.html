@@ -1,0 +1,16 @@
+<form [formGroup]="chatFormulaire" (ngSubmit)="onSubmit()">
+
+    <label>
+        Nom: <input formControlName="nom">
+    </label>
+    <label>
+        Age: <input type="number" formControlName="age">
+    </label>
+    <label>
+        Race: <input formControlName="race">
+    </label>
+    <label>
+        Est vivant: <input type="checkbox" formControlName="estVivant">
+    </label>
+    <button type="submit">Submit</button>
+</form>
